@@ -30,7 +30,7 @@ class PinPlusKeyBoardPackage extends StatefulWidget {
   final Color? inputBorderColor;
   final Color? inputTextColor;
   final bool inputHasBorder;
-  final Function()? onTextTapped;
+  final Function() onTextTapped;
   final double? inputBorderThickness;
   final double? inputElevation;
   final Color? inputShadowColor;
@@ -70,7 +70,7 @@ class PinPlusKeyBoardPackage extends StatefulWidget {
       this.inputsMaxWidth = 70,
       required this.pinInputController,
       required this.onSubmit,
-        this.onTextTapped,
+        required this.onTextTapped,
       this.inputFillColor,
       this.inputBorderColor,
       this.inputTextColor,

@@ -49,6 +49,9 @@ class _ExampleState extends State<Example> {
                 PinPlusKeyBoardPackage(
                   spacing: size.height * 0.06,
                   pinInputController: pinInputController,
+                  onTextTapped: (){
+                    print("Text is : " + pinInputController.text);
+                  },
                   onSubmit: () {
                     /// ignore: avoid_print
                     print("Text is : " + pinInputController.text);
